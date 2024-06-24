@@ -1,0 +1,135 @@
+/* >= 1200
+992 - 1199
+768 - 991
+576 - 768
+460 - 576
+414 - 460
+375 - 414
+320 - 375
+*/
+
+@media screen and (max-width: 1199px){
+
+    header form div {
+        width: 230px;
+        
+    }
+
+}
+
+@media screen and (max-width: 991px){
+
+    header > .container  {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    header form div {
+        width: 280px;
+    
+    }
+    .name {
+        margin: 0 25px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    header .menu {
+        margin: 15px 0;
+    }
+    header form {
+        margin: 15px 0;
+    }
+
+    .name {
+        margin: 0 25px;
+    }
+    body .containerFamilyFoto {       /* При вузькому екрані вирівнює блоки з фото в стовбчик*/
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .boxFamily_1 {                    /*Ставить  бокс горизонтально відносно горизонту*/
+        transform: rotate(360deg)!important;
+        margin-top: 0;
+    }
+    .boxFamily_2 {                    /*Ставить  бокс горизонтально відносно горизонту*/
+        transform: rotate(360deg)!important;
+        margin-top: 0;
+    }
+
+
+
+
+}
+@media screen and (max-width: 690px) {    /* При вузькому екрані вирівнює блоки з фото в стовбчик*/
+    body .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+    .boxSlava {                    /*Ставить  бокс горизонтально відносно горизонту*/
+        transform: rotate(360deg)!important;
+        margin-top: 0;
+    }
+    .boxIhor {                    /*Ставить  бокс горизонтально відносно горизонту*/
+        transform: rotate(360deg)!important;
+        margin-top: 0;
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    header .container .menu a {
+        margin: 0 10px;
+    }
+    
+}
+
+@media screen and (max-width: 460px) {
+    header .burgericon {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .name {
+        margin: 0 30px;
+        font-size: 2em;
+    }
+    header .container .menu a {
+        display: none;
+        margin: 0 10px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+    }
+    
+    header form {
+        margin: 15px 20px;
+    }
+
+    header .container .burgermenu a:hover,
+    header .container .burgermenu a .active {
+        border: none;
+        display: none;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+    }
+
+}
+@media screen and (max-width: 375px) {
+    .name {
+        margin: 0px 30px;
+        font-size: 2em;
+    }
+}
+@media screen and (max-width: 360px) {
+    .name {
+        margin: 0px 20px;
+        font-size: 1.85em;
+    }
+    header .menu {
+        margin: 15px 95px;
+    }
+}

@@ -1,0 +1,189 @@
+/*body {
+    background-image: url('../imeges/family.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}*/
+#home_page {                                                              /*Задній фон сторінки hone_page*/
+    background: url(../imeges/family.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: top;
+}
+#slava_page {                                                                 /*Задній фон сторінки slava_page*/
+    background: url(../imeges/family_2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+#anna_page {                                                                 /*Задній фон сторінки anna_page*/
+    background: url(../imeges/family_2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+#ihor_page {                                                                 /*Задній фон сторінки ihor_page*/
+    background: url(../imeges/family_2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: center;
+}
+#our_family_page {                                                              /*Задній фон сторінки our_family_page*/
+    background: url(../imeges/family.jpg) no-repeat center center fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+header .container img {
+    animation-name: logo-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    position: absolute;
+    left: 5%;
+}
+
+@keyframes logo-animation {
+    0% {
+        width: 70px;
+    }
+    50% {
+        width: 100px;
+        height: 100px;
+
+    }
+    100% {
+        width: 70px;
+    }
+}
+
+body .container .boxSlava img, .boxAnna img, .boxIhor img  {          /*Відступ фоток*/
+    animation-name: foto-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    margin: 20px 0 20px 0;
+    border-radius: 15px;
+}
+@keyframes foto-animation {
+    0% {
+        height: 150px;
+    }
+    50% {
+    
+        height: 152px;
+
+    }
+    100% {
+        height: 150px;
+    }
+}
+
+
+
+
+body .containerSlava, .containerAnna, .containerIhor {    /* Настройка зовнішнього виду боксів на сторінках Slava, Anna, Ihor*/
+    flex: 1;
+    margin: 20px 27%;
+    border: 2px solid rgb(0, 4, 255);
+    border-radius: 15px;
+    height: 350px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(243, 225, 201, 0.3);
+    text-shadow: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+body .containerSlava img, .containerSlava_2 img, .containerAnna img, .containerAnna_2 img, .containerIhor img, .containerIhor_2 img { /*Закруглює кути фоток*/
+    border-radius: 10px;
+}
+body .containerSlava p, .containerAnna p, .containerIhor_2 p { /*Надає колір тексту*/
+    color: rgb(58, 255, 9) ;
+}
+body .containerSlava_2, .containerAnna_2, .containerIhor_2 {   /*Розміщає маленькі контейнри з фотками*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 50px;
+}
+
+body .containerSlava_2 img, .containerAnna_2 img, .containerIhor_2 img {
+    margin: 20px 25px;
+    height: 300px;
+}
+
+
+
+body .fotoSlava, .fotoAnna, .fotoIhor  {
+    flex: 1;
+    margin: 30px;
+    border: 2px solid rgb(0, 4, 255);
+    border-radius: 15px;
+    height: 350px;
+    width: 250px;
+    background-color: rgba(243, 225, 201, 0.3);
+    text-shadow: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.fotoIhor_1 img  {
+    flex: 1;
+    margin: 30px;
+    border: 2px solid rgb(0, 4, 255);
+    border-radius: 15px;
+    
+    height: 100;
+    background-color: rgba(243, 225, 201, 0.3);
+    text-shadow: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boxSlava, .boxAnna, .boxIhor {    /* Настройка зовнішнього виду боксів на головній сторінкі*/
+    flex: 1;
+    margin: 50px;
+    border: 2px solid rgb(0, 4, 255);
+    border-radius: 15px;
+    height: 200px;
+    width: 150px;
+    text-align: center;
+    background-color: rgba(243, 225, 201, 0.6);
+    
+}
+
+
+.boxSlava {                    /*Повертає бокс відносно горизонту*/
+    transform: rotate(330deg);
+    margin-top: 100px;
+
+}
+
+.boxIhor {                     /*Повертає бокс відносно горизонту*/
+    transform: rotate(30deg);
+    margin-top: 100px;
+}
+.boxFamily_1 {                               /*Повертає бокс відносно горизонту*/
+    transform: rotate(330deg);
+}
+.boxFamily_2 {                               /*Повертає бокс відносно горизонту*/
+    transform: rotate(30deg);
+}
+
+.boxFamily, .boxFamily_1, .boxFamily_2 {                    /*Відступ між боксами всередині великого боксу*/
+    margin: 30px auto;
+}
+.boxFamily img, .boxFamily_1 img, .boxFamily_2 img {                    /*Відступ між фото всередині  боксу*/
+    margin: 30px auto;
+    height: 250px;
+    border-radius: 20px;
+}
+
+.containerFamilyFoto {
+    flex: 1;
+    margin: 50px 0;                                          /*Відступ між великими боксами по вертикалі*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
