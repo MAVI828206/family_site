@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Family Mahalias</title>
+        <link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+        <link rel="stylesheet" type="text/css" href="css/header_footer_responsiv.css"/>
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    </head>
+<body id="ihor_page">
+    <header class="container-fluid" >
+        <div class="container d-flex">
+            <img src="imeges/logo.png" alt="logo" height="70px">
+            
+            <div class="name">
+                <a ><i><b>Family  Mahalias</b></i></a>
+            </div>
+            
+            <div class="burger-icon" onclick="toggleMenu()">
+                <img class="burgericon" src="imeges/menu_burger_icon.png" alt="menu">
+            </div>
+            <div class="burgermenu" id="burgerMenu" style="display: none;">
+                <a href="home_page.html">Головна</a>
+                <!---<a href="about_us.html">Про нас</a>--->
+                <a href="our_family.html">Наша родина</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+            
+            <b><nav class="menu" >
+                <a href="home_page.html">Головна</a>
+                <!---<a href="about_us.html">Про нас</a>--->
+                    <ul class="dropdown">
+                        <a class="activ" href="our_family.html">Наша родина</a>
+                            <ul class="dropdown-content">
+                            <li><a href="slava.html">Слава</a></li>
+                            <li><a href="anna.html">Аня</a></li>
+                            <li><a class="activ" href="ihor.html">Ігор</a></li>
+                        </ul> 
+                    </ul>
+                <a href="contacts.html">Контакти</a>
+            </nav></b>
+            
+            <script src="java/javaScript.script.js"></script>
+
+            <form name="search" action="#" method="get">
+                <div class="d-flex">
+                    <input type="text" name="search" placeholder="Пошук...">
+                    <input type="submit" name="search" value="">
+                </div>
+            </form>
+
+        </div>
+    
+
+    </header>
+
+    <h1 style="color: rgb(58, 255, 9); text-align: center;">Мене звати Ігор, і я говна людина нашої Родини :))</h1>
+    <div class="containerIhor" >
+        <div class="infoIhor" >
+            <img src="imeges/ihor.jpg" alt="Ігор" height="300"  title="Ihor"/>
+        </div>
+    </div>
+    <h2 style="color: rgb(58, 255, 9); text-align: center;">Таким я був вдома в Україні:))</h2>
+    <div class="containerIhor_2" >
+        <div class="fotoIhor_1" >
+            <img src="imeges/ihor_1.jpeg" alt="Ігор" height="80"  title="Ihor_1"/>
+        </div>
+        <div class="fotoIhor_1">
+            <img src="imeges/ihor_2.jpeg" alt="Ігор" height="80"   title="Ihor_2"/>
+        </div>
+        <div class="fotoIhor_1" >
+            <img src="imeges/ihor_3.jpeg" alt="Ігор" height="80"  title="Ihor_3"/>
+        </div>
+    </div>
+    <h2 style="color: rgb(58, 255, 9); text-align: center;">А так я виглядаю в Німеччині.</h2>
+    <div class="containerIhor_2" >
+        <div class="fotoIhor" >
+            <img src="imeges/ihor_4.JPG" alt="Ігор" height="150"  title="Ihor_4"/>
+        </div>
+        <div class="fotoIhor">
+            <img src="imeges/ihor_5.JPG" alt="Ігор" height="150"   title="Ihor_5"/>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div class="container-footer">
+            <div class="footer-contact">
+                <h3>Нас можна знайти тут</h3>
+                <a href="https://www.instagram.com/viacheslav_mahalias/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Слава</a>
+                <a href="https://www.instagram.com/aniamagalias/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Аня</a>
+                <a href="https://www.instagram.com/h333itta/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Ігор</a>
+            </div>
+            <b><nav class="menu" >
+                <a class="activ" href="home_page.html">Головна</a>
+                <a href="about_us.html">Про нас</a>
+                <a href="our_family.html">Наша родина</a>
+                <a href="contacts.html">Контакти</a>
+            </nav></b>
+            <div class="copy-right">
+                <p>© 2024 MAVI. Всі права захищені</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>

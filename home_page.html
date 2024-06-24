@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Mahalias</title>
+    <link rel="stylesheet" type="text/css" href="css/header_footer.css"/>
+    <link rel="stylesheet" type="text/css" href="css/header_footer_responsiv.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+</head>
+<body id="home_page">
+    <header class="container-fluid" >
+        <div class="container d-flex">
+            <img src="imeges/logo.png" alt="logo" height="70px">
+            
+            <div class="name">
+                <a ><i><b>Family  Mahalias</b></i></a>
+            </div>
+            
+            <div class="burger-icon" onclick="toggleMenu()">
+                <img class="burgericon" src="imeges/menu_burger_icon.png" alt="menu">
+            </div>
+            <div class="burgermenu" id="burgerMenu" style="display: none;">
+            <a class="activ" href="home_page.html">Головна</a>
+                <!---<a href="about_us.html">Про нас</a>--->
+                <a href="our_family.html">Наша родина</a>
+                <a href="contacts.html">Контакти</a>
+            </div>
+            
+            <b><nav class="menu" >
+                <a class="activ" href="home_page.html">Головна</a>
+                <!---<a href="about_us.html">Про нас</a>--->
+                    <ul class="dropdown">
+                        <a href="our_family.html">Наша родина</a>
+                            <ul class="dropdown-content">
+                            <ol><a href="slava.html">Слава</a></ol>
+                            <ol><a href="anna.html">Аня</a></ol>
+                            <ol><a href="ihor.html">Ігор</a></ol>
+                        </ul>
+                    </ul>
+                <a href="contacts.html">Контакти</a>
+            </nav></b>
+            <script src="java/javaScript.script.js"></script>
+
+            <form name="search" action="#" method="get">
+                <div class="d-flex">
+                    <input type="text" name="search" placeholder="Пошук...">
+                    <input type="submit" name="search" value="">
+                </div>
+            </form>
+
+        </div>
+    
+
+    </header>
+    <div class="container" >
+        <div class="boxSlava" >
+            <p><b><a href="slava.html" style="text-decoration: none;">Мене звати Слава</a></b>  </p> 
+            <a href="slava.html"><img src="imeges/slava.jpg" alt="Слава" height="150"  title="Slava"/></a>
+        </div>
+        <div class="boxAnna">
+            <p><b><a href="anna.html"style="text-decoration: none;">Я красуня Аня</a></b> </p> 
+                <a href="anna.html"><img src="imeges/anna.JPG" alt="Аня" height="150"   title="Anna"/></a> 
+        </div>
+        <div class="boxIhor">
+            <p><b><a href="ihor.html"style="text-decoration: none;">А я їхній син Ігор</a></b> </p> 
+                <a href="ihor.html"> <img src="imeges/ihor.jpg" alt="Ігор" height="150"  title="Ihor"/></a>
+        </div>
+    </div>
+    <footer>
+        <div class="container-footer">
+            <div class="footer-contact">
+                <h3>Нас можна знайти тут</h3>
+                <a href="https://www.instagram.com/viacheslav_mahalias/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Слава</a>
+                <a href="https://www.instagram.com/aniamagalias/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Аня</a>
+                <a href="https://www.instagram.com/h333itta/"><img src="imeges/logo_insta.png" alt="Instagram" height="20px" title="Instagram">  Ігор</a>
+            </div>
+            <b><nav class="menu" >
+                <a class="activ" href="home_page.html">Головна</a>
+                <!---<a href="about_us.html">Про нас</a>--->
+                <a href="our_family.html">Наша родина</a>
+                <a href="contacts.html">Контакти</a>
+            </nav></b>
+            <div class="copy-right">
+                <p>© 2024 MAVI. Всі права захищені</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
